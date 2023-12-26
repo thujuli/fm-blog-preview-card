@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Blog preview card</title>
+    <style>
+      @font-face {
+        font-family: "Figtree";
+        src: url("./assets/fonts/Figtree-VariableFont_wght.ttf");
+        font-weight: 600 800;
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              yellow100: "#F4D04E",
+              grey100: "#808080",
+              black100: "#121212",
+            },
+            fontFamily: {
+              figtree: ["'Figtree'", "sans-serif"],
+            },
+            boxShadow: {
+              "3xl": "5px 5px 0px black",
+              "4xl": "10px 10px 0px black",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <main
+      class="max-w-[1440px] mx-auto flex justify-center items-center min-h-screen bg-yellow100 font-figtree px-7"
+    >
+      <div
+        class="bg-white border border-black100 rounded-2xl p-5 shadow-3xl max-w-80 hover:shadow-4xl"
+      >
+        <div>
+          <img
+            src="./assets/images/illustration-article.svg"
+            alt="Illustration Article"
+            class="mb-6 rounded-xl"
+          />
+          <p
+            class="bg-yellow100 py-1 px-2 rounded-lg w-fit text-sm font-extrabold mb-3"
+          >
+            Learning
+          </p>
+          <p class="text-sm mb-3">Published 21 Dec 2023</p>
+        </div>
+        <div class="space-y-3">
+          <h1
+            class="font-extrabold mb-4 text-xl hover:text-yellow100 hover:cursor-pointer"
+          >
+            HTML & CSS foundations
+          </h1>
+        </div>
+        <p class="text-sm font-semibold text-grey100 mb-6">
+          These languages are the backbone of every website, defining structure,
+          content, and presentation.
+        </p>
+        <div class="flex gap-x-3 items-center">
+          <img
+            src="./assets/images/image-avatar.webp"
+            alt="Avatar"
+            class="h-10 w-10"
+          />
+          <p class="font-extrabold">Greg Hooper</p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
